@@ -46,6 +46,11 @@
                 
                 <a href="pdf/La peor señora del mundo.pdf" target="_blank" class="pdf-btn">📖 Leer "La peor señora del mundo"</a>
                 
+                <!-- Contador de aciertos -->
+                <div class="progress-counter">
+                    Aciertos: <span id="correctCount">0</span>/3
+                </div>
+                
                 <!-- Acertijo 1 -->
                 <div class="acertijo">
                     <h3>Acertijo 1</h3>
@@ -127,8 +132,17 @@
         </div>
     </section>
 
-    <div class="confetti-container"></div>
+    <!-- Alerta de recompensa -->
+    <div class="reward-alert" id="rewardAlert">
+        <div class="reward-content">
+            <h2 class="reward-title">¡Felicidades, has ganado!</h2>
+            <p class="reward-subtitle">Recompensa de agente:</p>
+            <img src="img/recompensaMision1.png" alt="Personaje desbloqueado" class="reward-character">
+            <button class="reward-btn" id="closeReward">¡Aceptar recompensa!</button>
+        </div>
+    </div>
 
-    <script src="js/script.js"></script>
+    <div class="confetti-container"></div>
+<script src="js/script.js"></script>
 </body>
 </html>
